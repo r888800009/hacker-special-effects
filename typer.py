@@ -7,7 +7,8 @@ import random
 stdin_str = str(sys.stdin.read())
 
 out_buffer = ''
-out_size = random.randint(3, 20)
+min_size, max_size = 3, 20
+out_size = random.randint(min_size, max_size)
 
 for i in stdin_str:
     out_buffer += i
@@ -15,7 +16,7 @@ for i in stdin_str:
     if out_size == 0:
         print(out_buffer, end='',flush=True)
         time.sleep(0.005)
-        out_size = random.randint(1, 30)
+        out_size = random.randint(min_size, max_size)
         out_buffer = ''
 
 print(out_buffer, end='',flush=True)
