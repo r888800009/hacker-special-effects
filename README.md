@@ -14,4 +14,13 @@ auto typing code
 highlight source.c -O xterm256 | ./typer.py  
 ```
 
+loop
+``` bash
+while true
+do
+  highlight source.c -O xterm256 | ./typer.py
+done
+```
+
 ![](./typer.gif)
+
