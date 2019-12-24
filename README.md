@@ -19,6 +19,7 @@ loop
 while true
 do
   highlight source.c -O xterm256 | ./typer.py
+  sleep 0.01
 done
 ```
 
